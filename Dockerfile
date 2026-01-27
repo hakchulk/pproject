@@ -8,7 +8,8 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install the dependencies
-RUN pip install --no-cache-dir fastapi uvicorn[standard] pydantic
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir fastapi uvicorn pydantic
 
 # Copy the rest of the application code into the container
 COPY main.py .
