@@ -6,8 +6,8 @@ from statistics import mean
 # FastAPI 앱 인스턴스 생성
 app = FastAPI(
     title="학생 점수 관리 API",
-    description="학생들의 점수를 관리하는 FastAPI 샘플 애플리케이션",
-    version="1.0.0"
+    description="학생들의 점수를 관리하는 FastAPI 샘플 애플리케이션.",
+    version="1.0.1"
 )
 
 # 초기 점수 데이터
